@@ -823,3 +823,24 @@ footer p + p {
         animation-iteration-count: 1 !important;
     }
 }
+
+
+/* CV PAGE POLISH */
+
+.cv-card > h3 {
+    color: var(--plum);
+    margin-bottom: 14px;
+}
+
+.cv-card > p:not(.eyebrow) {
+    color: var(--muted);
+}
+
+.cv-card .cv-entry + .cv-entry {
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+}
+
+.cv-card .skills-grid {
+    margin-bottom: 0;
+}
