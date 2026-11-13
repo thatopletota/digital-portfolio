@@ -844,3 +844,61 @@ footer p + p {
 .cv-card .skills-grid {
     margin-bottom: 0;
 }
+
+
+/* HOMEPAGE PROFILE PICTURE */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-image {
+    flex: 0 0 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 370px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 48% 48% 24px 24px;
+    border: 6px solid #fff9f4;
+    outline: 2px solid #eaa4b5;
+    box-shadow: 0 16px 40px rgba(92, 24, 55, 0.15);
+}
+
+/* Responsive layout for phones and tablets */
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-image {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .profile-picture {
+        width: 230px;
+        height: 285px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
